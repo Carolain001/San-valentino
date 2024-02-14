@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("image/cuori2.gif"); /* Aggiungi l'immagine di sfondo */
+    background-size: cover; /* Fai in modo che l'immagine di sfondo copra l'intera pagina */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff1493;
+    font-size: 24px;
+}
+
+.gif {
+    width: 200px; /* Regola la larghezza dell'immagine a tuo piacimento */
+    height: auto;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d6117d;
+}
+
+#messaggioNascosto {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo semi-trasparente per il messaggio */
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Inizialmente nascosto */
+}
+
+#messaggioNascosto.mostrato {
+    display: block; /* Mostra solo quando la classe "mostrato" è presente */
+}
+
+#messaggioNascosto h3 {
+    color: #000000;
+    font-size: 40px;
+}
+
+#tiAmoNascosto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+#tiAmoNascosto.mostrato {
+    display: block;
+}
+
+#tiAmoNascosto img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 190px; /* Regola la larghezza dell'immagine a tuo piacimento */
+    height: auto; /* Mantieni l'aspect ratio */
+}
+
+.image-left {
+    left: -250px; /* Regola la posizione a sinistra a tuo piacimento */
+}
+
+.image-right {
+    right: -250px; /* Regola la posizione a destra a tuo piacimento */
+}
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentino</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> </script> 
+</head>
+<body>
+    <div class="container">
+        <img src="image/o2.gif" alt="Orsacchiotto" class="gif">
+        <h1>Buon San Valentino Amore</h1>
+        <button id="mostraMessaggio" onclick="mostraMessaggio()">Clicca qui!</button>
+    </div>
+
+    <div id="messaggioNascosto" class="nascosto"> 
+        <b> Quanso ci siamo incontrati per la prima volta, <br>
+        non stavo cercando l'amore ma stavo scappando da esso, <br>
+        ma tu eri cosi gentile e avevi un cuore cosi dolce <br>
+        che ho sentito il mio cuore aprirsi lentamente a te, <br>
+        e prima che me ne rendessi conto <br>
+        ero innamorata di te. <br> </b>
+        <button id="aButton" onclick="azioneA()">Ti amo</button>
+    </div>
+
+    <div id="tiAmoNascosto" class="nascosto">
+        <h3> Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo  <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo  <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo  <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo  <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo  <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo  <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+            Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo Ti amo <br>
+
+        </h3>
+        <img src="image/orsetti.gif" alt="Image 1" class="image-left">
+        <img src="image/o3.gif" alt="Image 2" class="image-right">
+    </div>
+
+    <script>
+
+        function mostraMessaggio() {
+            // Nascondi l'intero contenuto
+            document.querySelector(".container").style.display = "none";
+            // Mostra il messaggio nascosto
+            document.getElementById("messaggioNascosto").style.display = "block";
+        }
+
+        document.getElementById("mostraMessaggio").addEventListener("click", function() {
+    // Aggiungi la classe "mostrato" al messaggio nascosto
+    document.getElementById("messaggioNascosto").classList.add("mostrato");
+});
+
+function mostraMessaggio() {
+    document.querySelector(".container").style.display = "none";
+    document.getElementById("messaggioNascosto").classList.add("mostrato");
+}
+
+function azioneA() {
+    document.getElementById("messaggioNascosto").classList.remove("mostrato");
+    document.getElementById("tiAmoNascosto").classList.add("mostrato");
+    document.getElementById("indietroButton").classList.remove("nascosto");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Controlla se la classe "mostrato" è aggiunta al #tiAmoNascosto div all'avvio
+    if (document.getElementById("tiAmoNascosto").classList.contains("mostrato")) {
+        // Se sì, mostra il pulsante "Indietro"
+        document.getElementById("indietroButton").classList.remove("nascosto");
+    }
+});
+
+
+
+        </script>
+
+</body>
+</html>
